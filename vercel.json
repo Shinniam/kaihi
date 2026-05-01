@@ -1,8 +1,10 @@
 {
-  "regions": ["hnd1"],
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
   "routes": [
-    { "src": "/","dest": "/static/index.html" },
-    { "src": "/uv/(.*)","dest": "/static/uv/$1" },
-    { "src": "/.*","dest": "/index.js" }
+    { "src": "/bare/(.*)", "dest": "/index.js" },
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
