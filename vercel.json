@@ -7,13 +7,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/bare/(.*)",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+    { "src": "/bare/(.*)", "dest": "/index.js" },
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
